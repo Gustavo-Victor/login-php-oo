@@ -1,0 +1,134 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CORPO*/
+body{
+    background-image: url("../img/montanha-grande.jpg");
+    background-position: 50% 50%;
+    color: white;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    
+}
+
+/*DIV PRINCIPAL DE CONTEÚDO*/
+div#corpo{
+    /*background-color: blueviolet; */
+    width: 70%;
+    max-width: 400px;
+    position: absolute;
+    padding: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*CONFIGURAÇÕES INPUT E CORPO*/
+div#corpo input, div#corpo a{
+    display: block;
+}
+
+/*ITEM DA LISTA DO PAINEL DO USUÁRIO*/
+div#corpo ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 3% 0;
+}
+
+/*BOTÃO LOGOUT*/
+div#corpo a#sair{
+    display: block;
+    color: white;
+    background-color: #ff0066;
+    margin: 3% 0;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+div#corpo a#sair:hover{
+    background-color:#cf0053;
+    transition: 0.5s;
+}
+
+/*CAMPOS DO FORMULÁRIO*/
+input{    
+    height: 55px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 16pt;
+    padding: 1% 2%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+/*BOTÃO ENVIAR DO FORMULÁRIO*/
+input[type=submit]{
+    width: calc(100% + 4%);
+    height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #ff0066;
+    border: none;
+}
+
+input[type=submit]:hover{
+    background-color:#cf0053;
+    transition: 0.5s;
+}
+
+/*FAZER COM QUE O PLACEHOLDER FIQUE NA COR BRANCA NOS NAVEGADORES MAIS IMPORTANTES*/
+::-webkit-input-placeholder{
+    color: white;
+}
+
+::-moz-placeholder{
+    color: white;
+}
+
+::-ms-input-placeholder{
+    color: white;
+}
+
+/*CONFIGURAR TÍTULO DA DIV*/
+div#corpo h1, div#corpo a{
+    text-align: center;
+}
+
+/*LINK DA DIV*/
+div#corpo a{
+    text-decoration: none;
+    color: white; 
+}
+
+div#corpo a:hover{
+    text-decoration: underline;
+}
+
+/*CONFIGURAR DIV DE MENSAGEM DE SUCESSO E DE ERRO*/
+div#mensagem_erro, div#mensagem_sucesso{
+    max-width: 390px;
+    margin: 2% auto;
+    text-align: center;
+    padding: 10px;
+}
+
+div#mensagem_erro{
+    background-color: rgba(250, 158, 114, .3);
+    border: 1px solid rgb(165, 42,42);
+}
+
+div#mensagem_sucesso{
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34, 139, 39);
+}
